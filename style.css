@@ -1,0 +1,381 @@
+body
+{
+     background-color: black; 
+}
+a
+{
+    text-decoration: none;
+    color: cornsilk;
+}
+.mynav
+{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.myheader
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    
+}
+.myheader
+{
+    background-color: indianred;
+}
+.nav_logo
+{
+   
+    color:rgb(235, 223, 223);
+    outline-style: none;
+    margin: 1rem;
+    
+    
+}
+.nav_list
+{
+    display: flex;
+    padding: 1rem;
+   
+    
+}
+li
+{
+    list-style: none;
+    margin: 1rem;
+    
+}
+/* Home */
+.home_title
+{
+   
+        height: 80px;
+        width: 80%;
+        line-height: 2;
+        margin-top: 8rem;
+        margin-left: 1rem;
+        text-align: justify;
+        
+        
+}
+.home_container
+{
+    height: 100vh;
+        grid-template-rows: 1.7fr 1fr;
+        row-gap: 0;
+        color: cornsilk;
+        /* background: url("Image/Background\ Image2.jpg"); */
+        
+
+}
+.home_img
+{
+    width: 300px;
+    height: 300px;
+    right: 10%;
+    float: right;
+    margin-top: -14rem;
+    margin-right: 3rem;
+    border: 5px solid indianred;
+    border-radius: 10px;
+   
+
+}
+.button
+{
+    display: inline-block;
+    background-color:white;
+    color:black;
+    padding: .75rem 2.5rem;
+    font-weight: var(--font-semi);
+    font-weight:bold;
+    border-radius: 1rem;
+
+    
+  }
+.home__button
+{
+    align-self: flex-end;
+    color: var(--white-color);
+    line-height: .8;
+    padding-bottom: var(--mb-4);
+    margin-top: 5rem;
+    margin-left: 3rem;
+}
+#linkedin
+{
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+#github
+{
+    margin-left: 2rem;
+}
+/* About */
+.about_title
+{
+    /* background-color:ghostwhite; */
+    margin-bottom:1rem;
+    text-align: center;
+    
+    
+    
+}
+#aboutme
+{
+    background-color:bisque;
+    width: 100%;
+    align-items:flex-start;
+    text-align: initial;
+    padding: 2rem 0;
+    text-align:start;
+   
+   
+}
+#aboutme p
+{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+#aboutme hr
+{
+    width:85%;
+    size:"2" ;
+    color:rgb(255, 80, 80);
+    height: 1px;
+}
+.about_title
+{
+   font-size:xx-large; 
+   text-decoration: underline;
+
+}
+.about_subtitle
+{
+    margin-left: 3rem;
+    word-spacing: 1px;
+    line-height: 1;
+}
+.about_text
+{
+
+        text-decoration: blink;
+        text-decoration: peachpuff;
+        margin-left: 2rem;
+        word-spacing: 1px;
+        line-height: 2;
+      
+}
+.section_title
+{
+    align-content: center;
+
+}
+.section_title
+{
+    margin-bottom: 3rem;
+    /* margin-left: 35rem; */
+
+}
+#education
+{
+    background-color: bisque;
+    margin-top: -6rem;
+    text-align: justify;
+    
+}
+#education h1
+{
+    margin-left: 5rem;
+    margin-bottom: -2rem;
+    text-align: center;
+    margin-right: 3rem;
+
+   
+}
+
+.table
+{
+    margin-left: 4rem;
+   margin-right: auto;
+   width: 100%;
+   padding: 20px;
+   border-spacing: 10px;
+   font-family:monospace;
+   
+}
+
+/* Skills */
+#skillme
+{
+    /* background-color:rgb(66, 221, 162); */
+    align-items: center;
+    text-align: center;
+    padding: 4rem 0;
+    text-align: center;
+
+}
+#skillme h2
+{
+    font-size:xx-large; 
+    text-decoration: underline;
+}
+
+* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skill_container 
+{
+  width: 60%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  margin-left: 6rem;
+  
+ 
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  
+}
+#skillme p
+{
+    color: cornsilk;
+
+}
+#skillme h2
+{
+    color:darkmagenta
+}
+#skillme hr
+{
+    width:85%;
+    size:"1" ;
+    color:"silver";
+        
+
+}
+
+.java {width: 90%; background-color:saddlebrown;} /* Green */
+.cc {width: 75%; background-color: #2196F3;} /* Blue */
+.hc {width: 80%; background-color: #f44336;} /* Red */
+.js {width: 65%; background-color:lightseagreen;} /* Dark Grey */
+
+/* Project */
+#Project_header
+{
+    background-color:ghostwhite;
+    padding: 2px;
+    text-align: center;
+   -moz-text-size-adjust: 10%;
+   font-size:xx-large; 
+   text-decoration: underline;
+}
+#projectme
+{
+    background-color:ghostwhite;
+    align-items: center;
+    text-align: initial;
+    padding: 4rem 0;
+    text-align: center;
+    display: flex;
+
+}
+a.portfolio__link-name
+{
+    text-decoration: none;
+    color: black;
+}
+.card
+{
+    /* border:1px solid green;
+    border-spacing:4; */
+    height: 80%;
+    width: 90%;
+}
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  /* Conatct */
+  .container h3
+  {
+    color: cornsilk;
+  }
+  .contact_container
+  {
+    color: cornsilk;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 2;
+    
+
+  }
+  .boxed
+  {
+  
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom:1 rem;
+    color: rgb(19, 18, 17);
+    /* border: 1px solid green ; */
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+    background-color: tan;
+    border-radius: 20px;
+    
+    /* background-color: #cfc ; */
+
+  }
+  #followme
+  {
+      /* color: whitesmoke; */
+      color: wheat;
+      margin-bottom: 1rem;
+      display: flex;
+      margin-left: 3rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+     text-overflow: ellipsis;
+  }
