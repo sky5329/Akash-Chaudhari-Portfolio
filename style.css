@@ -1,3 +1,8 @@
+*
+{
+    margin: 0;
+    padding:0;
+}
 body
 {
      background-color: black; 
@@ -37,7 +42,7 @@ a
     
     
 }
-.nav_list
+/* .nav_list
 {
     display: flex;
     padding: 1rem;
@@ -49,7 +54,57 @@ li
     list-style: none;
     margin: 1rem;
     
-}
+} */
+.topnav {
+    overflow: hidden;
+    background-color:indianred;
+  }
+  
+  .topnav a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color:rgb(0, 77, 128);
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
 /* Home */
 .home_title
 {
@@ -57,33 +112,81 @@ li
         height: 80px;
         width: 80%;
         line-height: 2;
-        margin-top: 8rem;
+        /* margin-top: 8rem; */
         margin-left: 1rem;
-        text-align: justify;
+        
+        margin-bottom: 4rem;
+        padding-top: 2%;
         
         
 }
 .home_container
 {
-    height: 100vh;
-        grid-template-rows: 1.7fr 1fr;
+    /* height: 100vh; */
+        /* grid-template-rows: 1.7fr 1fr; */
         row-gap: 0;
         color: cornsilk;
         /* background: url("Image/Background\ Image2.jpg"); */
-        
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 2px;
+         
+}
+.home
+{
+    /* margin-bottom: 10rem; */
+    margin-top: 5rem;
+}
+#social
+{
+    color: cornsilk;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    /* background-color: gold; */
+    
 
+   
+    
+}
+.icon
+{
+   width: 50%;
+  
+  
+   
+}
+.img_icon
+{
+  width: 50%;
+  text-align: right;
+  justify-content: right;
+  padding-top: 4%;
+    padding-left: 25%;
+  /* float: left; */
+  /* background-color: chartreuse; */
+ 
 }
 .home_img
 {
-    width: 300px;
+     width: 300px;
     height: 300px;
-    right: 10%;
-    float: right;
-    margin-top: -14rem;
-    margin-right: 3rem;
-    border: 5px solid indianred;
-    border-radius: 10px;
+    max-width: 100%;
+    
+      /* right: 10%; */
+    /* float: right; */
+    /* margin-top: -14rem;
+     margin-right: 3rem;   */
+    border: 2px solid indianred;
+    border-radius: 300px; 
    
+    /* padding-left: 15rem;
+    padding-bottom:10rem;
+    display: flex; */
+    
+    /* display: block; */
+    
+    
 
 }
 .button
@@ -100,10 +203,10 @@ li
   }
 .home__button
 {
-    align-self: flex-end;
+    /* align-self: flex-end; */
     color: var(--white-color);
     line-height: .8;
-    padding-bottom: var(--mb-4);
+    /* padding-bottom: var(--mb-4); */
     margin-top: 5rem;
     margin-left: 3rem;
 }
@@ -117,37 +220,46 @@ li
     margin-left: 2rem;
 }
 /* About */
+#about
+{
+    padding-top: 5%;
+}
 .about_title
 {
     /* background-color:ghostwhite; */
     margin-bottom:1rem;
     text-align: center;
-    
+    padding-top: 2%;
+   
     
     
 }
 #aboutme
 {
     background-color:bisque;
-    width: 100%;
+    max-width: 100%;
     align-items:flex-start;
     text-align: initial;
-    padding: 2rem 0;
+   
     text-align:start;
+    
    
    
 }
 #aboutme p
 {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 0.5rem;
+  /* margin-right: 3rem; */
 }
 #aboutme hr
 {
-    width:85%;
-    size:"2" ;
-    color:rgb(255, 80, 80);
+    width:100%;
     height: 1px;
+    color:rgb(255, 80, 80);
+   
+    
+    
+    
 }
 .about_title
 {
@@ -157,7 +269,7 @@ li
 }
 .about_subtitle
 {
-    margin-left: 3rem;
+    margin-left: 0.5rem;
     word-spacing: 1px;
     line-height: 1;
 }
@@ -166,14 +278,34 @@ li
 
         text-decoration: blink;
         text-decoration: peachpuff;
-        margin-left: 2rem;
+        /* margin-left: 2rem; */
         word-spacing: 1px;
         line-height: 2;
       
 }
+
+/* @media (min-width: 575px) {
+    .responsive-font-example {
+      width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  } */
+/* @media (min-width: 1200px) {
+    .responsive-font-example {
+      font-size: 80px;
+    }
+  }
+  /* If the screen size is smaller than 1200px, set the font-size to 80px */
+  /* @media (max-width: 1199.98px) {
+    .responsive-font-example {
+      font-size: 30px;
+    }
+  }  */
 .section_title
 {
     align-content: center;
+
 
 }
 .section_title
@@ -185,28 +317,40 @@ li
 #education
 {
     background-color: bisque;
-    margin-top: -6rem;
+    margin-top: -1rem;
     text-align: justify;
     
 }
+
 #education h1
 {
-    margin-left: 5rem;
-    margin-bottom: -2rem;
+  
+  
     text-align: center;
-    margin-right: 3rem;
+    
 
    
 }
 
 .table
 {
-    margin-left: 4rem;
-   margin-right: auto;
-   width: 100%;
-   padding: 20px;
-   border-spacing: 10px;
+    
+    /* margin-left: auto;
+    margin-right: auto;
+   width: 50%;
+  
+   
    font-family:monospace;
+   text-align: center; */
+   margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 100%;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 3px;
+    border-color: darkgrey;
+    border-spacing: 3px;
    
 }
 
@@ -216,14 +360,18 @@ li
     /* background-color:rgb(66, 221, 162); */
     align-items: center;
     text-align: center;
-    padding: 4rem 0;
+    /* padding: 4rem 0; */
     text-align: center;
+    margin-bottom: 4rem;
+    padding-top: 3% ;
+    
 
 }
 #skillme h2
 {
     font-size:xx-large; 
     text-decoration: underline;
+    
 }
 
 * Make sure that padding behaves as expected */
@@ -235,6 +383,7 @@ li
   width: 60%; /* Full width */
   background-color: #ddd; /* Grey background */
   margin-left: 6rem;
+  
   
  
 }
@@ -249,6 +398,7 @@ li
 #skillme p
 {
     color: cornsilk;
+    padding: 10px;
 
 }
 #skillme h2
@@ -257,9 +407,11 @@ li
 }
 #skillme hr
 {
-    width:85%;
+    width: 100%;
+    
     size:"1" ;
     color:"silver";
+    
         
 
 }
@@ -287,6 +439,8 @@ li
     padding: 4rem 0;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
+    
 
 }
 a.portfolio__link-name
@@ -296,10 +450,30 @@ a.portfolio__link-name
 }
 .card
 {
-    /* border:1px solid green;
-    border-spacing:4; */
+     /* border:1px solid green; */
+    border-spacing:4; 
     height: 80%;
     width: 90%;
+    padding-bottom: 5%;
+    /* padding-bottom: 5%;
+    padding: 5%;
+    margin-right: 10%;
+    margin-top: 3%;
+    border-radius: 10%;
+    padding-right: 3px;
+    border: 2px solid indianred; */
+}
+.card-title
+{
+  padding:3%;
+}
+.card-text
+{
+    
+    padding: 2%;
+    padding-right: 8%;
+    word-spacing: 1px;
+    line-height: 1.5;
 }
 .dropbtn {
     background-color: #04AA6D;
@@ -310,7 +484,7 @@ a.portfolio__link-name
   }
   
   .dropdown {
-    position: relative;
+    
     display: inline-block;
   }
   

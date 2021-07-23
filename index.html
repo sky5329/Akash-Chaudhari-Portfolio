@@ -19,7 +19,7 @@
             <div>
                 <a href="#" class="nav_logo">Akash Chaudhari</a>
             </div>
-            <div class="nav_menu">
+            <!-- <div class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
@@ -28,7 +28,34 @@
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
 
-            </div>
+            </div> -->
+            <div class="topnav" id="myTopnav">
+                <a href="#home" >Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+              
+              <!-- <div style="padding-left:16px">
+                <h2>Responsive Topnav Example</h2>
+                <p>Resize the browser window to see how it works.</p>
+              </div> -->
+              
+              <script>
+              function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "topnav";
+                }
+              }
+              </script>
+              
         </nav>
     </header>
     <!-- Home -->
@@ -37,22 +64,35 @@
             <br>
             <br>
             <br>
-            <h1 class="home_title"><span>Hi</span><br>
+            <h1 class="home_title">Hi<br>
             I am Akash Chaudhari !<br>Passionate About Web Development</h1>
             <br>
+           
+        </div>
+        <div id="social">
+
+           <div id="icon">
             <div height="10" width="20" class="home__button">
                 <a href="https://drive.google.com/file/d/1G1TwGVcPN0Y7eDKUKjKQPNUGal4dhPTa/view?usp=sharing" class="button">RESUME</a>
             </div>
+            
             <a href="https:www.linkedin.com/in/akash-chaudhari-212741118">
                 <i id="linkedin"   class="fa fa-linkedin-square" style="font-size:36px;color:blue"></i>
             </a>
+        
+          
             <a href="https://github.com/sky5329">
                <i id="github" class="fa fa-github" style="font-size:36px"></i>
             </a>
-            
-            
+          
+          </div>
+              
+            <div class="img_icon">
             <img src="Image/Akash.jpg"   alt="" class="home_img">
+            </div>
+
         </div>
+        
     </section>
 
     <!-- About -->
@@ -64,18 +104,8 @@
             
             <h1 class="about_title">About Me</h1>
             <h2  class="about_subtitle" >I'm Akash Chaudahri</h2>
-            <p class="about_text">I have done BE Mechanical in 2018 , after that I have done one year (2019-20) of apprentice 
-                in Thermal Power Plant, Bhusawal(Mahagenco). It was a one year of contract. So after completing that 
-                apprentice I attended some demo lecture of programming languge. I got interested in it so I decided to switch
-                my carreer in Software Engineering. I have done training of 6 months from private institute. In training
-                 I have learned various programming languges and web technologies. Depeneding upon this skills I have done three projects 
-                 and many more to come. I have good hands on Java Language and I am passionate about implementing and launching new projects.
-
+            <p class="about_text responsive-font-example">I have done BE Mechanical in 2018 , after that I have done one year (2019-20) of apprentice in Thermal Power Plant, Bhusawal(Mahagenco). It was a one year of contract. So after completing that apprentice I attended some demo lecture of programming languge. I got interested in it so I decided to switch my carreer in Software Engineering. I have done training of 6 months from private institute. In training I have learned various programming languges and web technologies. Depeneding upon this skills I have done three projects and many more to come. I have good hands on Java Language and I am passionate about implementing and launching new projects.
             </p>
-            
-            <hr>
-            <hr>
-            
         </div>
         <hr>
         <div id="education">
@@ -83,8 +113,8 @@
             <br>
           <h1>Qualifications</h1>
           <br>
-          <table class="table">
-        </tr>   
+          <table class="table" border="1" align="centre">
+            </tr>   
         <tr>
         <td><h3 >FirstBit Solution, Pune</h3> </td>
         <td><h3 >Diploma in Java</h3>
@@ -112,6 +142,7 @@
 
 
         </div>
+        
        
 
     </section>
@@ -122,8 +153,9 @@
 
         <div id ="skillme">
             <h2>My Skills</h2>
-            <hr> 
-            <hr> 
+            <br>
+            <hr align="centre"> 
+            <hr align="centre"> 
             <p >Java</p>
                 <div class="skill_container">
                     <div class="skills java">90%</div>
